@@ -420,7 +420,7 @@ enum Season GetSeason(void)
     //     case MONTH_DEC:
     //         return SEASON_WINTER;
     // }
-    return SEASON_WINTER;
+    return SEASON_SPRING;
 }
 
 const u8* GetSeasonName(enum Season season)

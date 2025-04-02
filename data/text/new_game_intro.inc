@@ -159,14 +159,14 @@ gOakSpeech_Text_AskPlayerGender::
     .string "Or are you a girl?$"
 
 gPikachuIntro_Text_Page1::
-    .string "In the world which you are about to\n"
-    .string "enter, you will embark on a grand\n"
-    .string "adventure with you as the hero.\n"
+    .string "Welcome to the newly discovered Azoria\n"
+    .string "Region! This beautiful region features\n"
+    .string "different environments where Pokémon\n"
+    .string "thrive everywhere.\n"
     .string "\n"
-    .string "Speak to people and check things\n"
-    .string "wherever you go, be it towns, roads,\n"
-    .string "or caves. Gather information and\n"
-    .string "hints from every source.$"
+    .string "You will be on an adventure across\n"
+    .string "the region while catching and raising\n"
+    .string "your very own Pokémon.$"
 
 gPikachuIntro_Text_Page2::
     .string "New paths will open to you by helping\n"

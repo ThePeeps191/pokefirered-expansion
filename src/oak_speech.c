@@ -350,6 +350,16 @@ static const u8 *const sPikachuIntro_Strings[NUM_PIKACHU_INTRO_PAGES] =
     [PIKACHU_INTRO_PAGE_2] = gPikachuIntro_Text_Page2,
     [PIKACHU_INTRO_PAGE_3] = gPikachuIntro_Text_Page3
 };
+// old pikachu intro strings for reference:
+// gPikachuIntro_Text_Page1::
+//     .string "In the world which you are about to\n"
+//     .string "enter, you will embark on a grand\n"
+//     .string "adventure with you as the hero.\n"
+//     .string "\n"
+//     .string "Speak to people and check things\n"
+//     .string "wherever you go, be it towns, roads,\n"
+//     .string "or caves. Gather information and\n"
+//     .string "hints from every source.$"
 
 #define GFX_TAG_PLATFORM     0x1000
 #define GFX_TAG_PIKACHU      0x1001
