@@ -65,6 +65,30 @@ static const u32 sTimeOfDayStarts[SEASON_WINTER + 1][TIME_NIGHT + 1] = {
         [TIME_EVENING] = 17,
         [TIME_NIGHT] = 19,
     },
+    // [SEASON_SPRING] = {
+    //     [TIME_MORNING] = 5,
+    //     [TIME_DAY] = 10,
+    //     [TIME_EVENING] = 17,
+    //     [TIME_NIGHT] = 20,
+    // },
+    // [SEASON_SUMMER] = {
+    //     [TIME_MORNING] = 5,
+    //     [TIME_DAY] = 10,
+    //     [TIME_EVENING] = 17,
+    //     [TIME_NIGHT] = 20,
+    // },
+    // [SEASON_AUTUMN] = {
+    //     [TIME_MORNING] = 5,
+    //     [TIME_DAY] = 10,
+    //     [TIME_EVENING] = 17,
+    //     [TIME_NIGHT] = 20,
+    // },
+    // [SEASON_WINTER] = {
+    //     [TIME_MORNING] = 5,
+    //     [TIME_DAY] = 10,
+    //     [TIME_EVENING] = 17,
+    //     [TIME_NIGHT] = 20,
+    // },
 };
 
 void RtcDisableInterrupts(void)
@@ -375,43 +399,45 @@ u8 GetCurrentMinute(void)
 
 enum Season GetSeason(void)
 {
-    RtcGetInfo(&sRtc);
-    switch(ConvertBcdToBinary(sRtc.month))
-    {
-        case MONTH_JAN:
-        case MONTH_MAY:
-        case MONTH_SEP:
-        default:
-            return SEASON_SPRING;
-        case MONTH_FEB:
-        case MONTH_JUN:
-        case MONTH_OCT:
-            return SEASON_SUMMER;
-        case MONTH_MAR:
-        case MONTH_JUL:
-        case MONTH_NOV:
-            return SEASON_AUTUMN;
-        case MONTH_APR:
-        case MONTH_AUG:
-        case MONTH_DEC:
-            return SEASON_WINTER;
-    }
+    // RtcGetInfo(&sRtc);
+    // switch(ConvertBcdToBinary(sRtc.month))
+    // {
+    //     case MONTH_JAN:
+    //     case MONTH_MAY:
+    //     case MONTH_SEP:
+    //     default:
+    //         return SEASON_SPRING;
+    //     case MONTH_FEB:
+    //     case MONTH_JUN:
+    //     case MONTH_OCT:
+    //         return SEASON_SUMMER;
+    //     case MONTH_MAR:
+    //     case MONTH_JUL:
+    //     case MONTH_NOV:
+    //         return SEASON_AUTUMN;
+    //     case MONTH_APR:
+    //     case MONTH_AUG:
+    //     case MONTH_DEC:
+    //         return SEASON_WINTER;
+    // }
+    return SEASON_WINTER;
 }
 
 const u8* GetSeasonName(enum Season season)
 {
-    switch (season)
-    {
-        case SEASON_SPRING:
-        default:
-            return sText_SpringName;
-        case SEASON_SUMMER:
-            return sText_SummerName;
-        case SEASON_AUTUMN:
-            return sText_AutumnName;
-        case SEASON_WINTER:
-            return sText_WinterName;
-    }
+    // switch (season)
+    // {
+    //     case SEASON_SPRING:
+    //     default:
+    //         return sText_SpringName;
+    //     case SEASON_SUMMER:
+    //         return sText_SummerName;
+    //     case SEASON_AUTUMN:
+    //         return sText_AutumnName;
+    //     case SEASON_WINTER:
+    //         return sText_WinterName;
+    // }
+    return sText_SpringName;
 }
 
 u8 GetSeasonDay(void)
