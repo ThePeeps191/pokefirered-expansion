@@ -165,7 +165,7 @@ gPikachuIntro_Text_Page1::
     .string "thrive everywhere.\n"
     .string "\n"
     .string "You will be on an adventure across\n"
-    .string "the region while catching and raising\n"
+    .string "Azoria while catching and raising\n"
     .string "your very own Pokémon.$"
 
 gPikachuIntro_Text_Page2::
@@ -184,28 +184,28 @@ gPikachuIntro_Text_Page3::
     .string "That is our biggest objective.\n"
     .string "\n"
     .string "Press the A Button, and let your\n"
-    .string "adventure begin!$"
+    .string "adventure begin! Good luck!$"
 
 gOakSpeech_Text_WelcomeToTheWorld::
     .string "Hello, there!\n"
     .string "Glad to meet you!\p"
-    .string "Welcome to the world of POKéMON!\p"
-    .string "My name is OAK.\p"
+    .string "Welcome to the world of Pokémon!\p"
+    .string "My name is Oak.\p"
     .string "People affectionately refer to me\n"
-    .string "as the POKéMON PROFESSOR.\p$"
+    .string "as the Pokémon Professor.\p$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world…$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
     .string "…is inhabited far and wide by\n"
-    .string "creatures called POKéMON.\p$"
+    .string "creatures called Pokémon.\p$"
 
 gOakSpeech_Text_IStudyPokemon::
-    .string "For some people, POKéMON are pets.\n"
+    .string "For some people, Pokémon are pets.\n"
     .string "Others use them for battling.\p"
     .string "As for myself…\p"
-    .string "I study POKéMON as a profession.\p$"
+    .string "I study Pokémon as a profession.\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a little about\n"
@@ -237,7 +237,7 @@ gOakSpeech_Text_RememberRivalsName::
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
-    .string "Your very own POKéMON legend is\n"
+    .string "Your very own Pokémon legend is\n"
     .string "about to unfold!\p"
     .string "A world of dreams and adventures\n"
-    .string "with POKéMON awaits! Let's go!$"
+    .string "with Pokémon awaits! Let's go!$"
