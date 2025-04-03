@@ -14532,7 +14532,7 @@
         {
             {
 #line 5796
-            .species = SPECIES_SQUIRTLE,
+            .species = SPECIES_PIPLUP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5798
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14542,8 +14542,8 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5799
-                MOVE_TACKLE,
-                MOVE_TAIL_WHIP,
+                MOVE_POUND,
+                MOVE_GROWL,
             },
             },
         },
@@ -14569,7 +14569,7 @@
         {
             {
 #line 5811
-            .species = SPECIES_BULBASAUR,
+            .species = SPECIES_ROWLET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5813
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14606,7 +14606,7 @@
         {
             {
 #line 5826
-            .species = SPECIES_CHARMANDER,
+            .species = SPECIES_SCORBUNNY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5828
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14616,7 +14616,7 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5829
-                MOVE_SCRATCH,
+                MOVE_TACKLE,
                 MOVE_GROWL,
             },
             },
