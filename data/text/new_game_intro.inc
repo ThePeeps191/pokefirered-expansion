@@ -225,8 +225,10 @@ gOakSpeech_Text_YourNameWhatIsIt::
     .string "What is it?\p$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
-    .string "Right…\n"
-    .string "So your name is {PLAYER}.$"
+    .string "Right…\p"
+    .string "So you're the {PLAYER} I invited to\n"
+    .string "explore Azoria and to help me learn\l"
+    .string "more about the Pokémon here.$"
 
 gOakSpeech_Text_WhatWasHisName::
     .string "This is my grandson.\p"

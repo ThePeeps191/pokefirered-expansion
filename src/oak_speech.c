@@ -24,6 +24,11 @@
 // #define INTRO_SPECIES SPECIES_NIDORAN_F
 #define INTRO_SPECIES SPECIES_ROCKRUFF
 
+// old text for reference
+// gOakSpeech_Text_SoYourNameIsPlayer::
+//     .string "Right…\n"
+//     .string "So your name is {PLAYER}.$"
+
 enum
 {
     WIN_INTRO_TEXTBOX,
