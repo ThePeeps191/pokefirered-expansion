@@ -669,3 +669,9 @@ SevenIsland_SevaultCanyon_House_EventScript_ItemLuckyPunch::
 SilphCo_4F_EventScript_ItemTM41::
 	finditem ITEM_TM41
 	end
+
+SeabreezeTown_EventScript_ItemOranBerry::
+	finditem ITEM_ORAN_BERRY
+	end
+
+

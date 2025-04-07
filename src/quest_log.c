@@ -225,23 +225,25 @@ void RunQuestLogCB(void)
 
 bool8 QL_IsRoomToSaveEvent(const void * cursor, size_t size)
 {
-    const void *start = gSaveBlock1Ptr->questLog[sCurrentSceneNum].script;
-    const void *end = gSaveBlock1Ptr->questLog[sCurrentSceneNum].end;
-    end -= size;
-    if (cursor < start || cursor > end)
-        return FALSE;
-    return TRUE;
+    // const void *start = gSaveBlock1Ptr->questLog[sCurrentSceneNum].script;
+    // const void *end = gSaveBlock1Ptr->questLog[sCurrentSceneNum].end;
+    // end -= size;
+    // if (cursor < start || cursor > end)
+    //     return FALSE;
+    // return TRUE;
+    return FALSE;
 }
 
 // Identical to QL_IsRoomToSaveEvent
 bool8 QL_IsRoomToSaveAction(const void * cursor, size_t size)
 {
-    const void *start = gSaveBlock1Ptr->questLog[sCurrentSceneNum].script;
-    const void *end = gSaveBlock1Ptr->questLog[sCurrentSceneNum].end;
-    end -= size;
-    if (cursor < start || cursor > end)
-        return FALSE;
-    return TRUE;
+    // const void *start = gSaveBlock1Ptr->questLog[sCurrentSceneNum].script;
+    // const void *end = gSaveBlock1Ptr->questLog[sCurrentSceneNum].end;
+    // end -= size;
+    // if (cursor < start || cursor > end)
+    //     return FALSE;
+    // return TRUE;
+    return FALSE;
 }
 
 static void SetQuestLogState(u8 state)
@@ -446,39 +448,41 @@ static bool8 TryRecordActionSequence(struct QuestLogAction * actions)
 
 void TryStartQuestLogPlayback(u8 taskId)
 {
-    u8 i;
+    // u8 i;
 
-    UpdateLoadedSeason();
-    QL_EnableRecordingSteps();
-    sNumScenes = 0;
-    for (i = 0; i < QUEST_LOG_SCENE_COUNT; i++)
-    {
-        if (gSaveBlock1Ptr->questLog[i].startType != 0)
-            sNumScenes++;
-    }
+    // UpdateLoadedSeason();
+    // QL_EnableRecordingSteps();
+    // sNumScenes = 0;
+    // for (i = 0; i < QUEST_LOG_SCENE_COUNT; i++)
+    // {
+    //     if (gSaveBlock1Ptr->questLog[i].startType != 0)
+    //         sNumScenes++;
+    // }
 
-    if (sNumScenes != 0)
-    {
-        gHelpSystemEnabled = FALSE;
-        Task_BeginQuestLogPlayback(taskId);
-        DestroyTask(taskId);
-    }
-    else
-    {
-        SetMainCallback2(CB2_ContinueSavedGame);
-        DestroyTask(taskId);
-    }
+    // if (sNumScenes != 0)
+    // {
+    //     gHelpSystemEnabled = FALSE;
+    //     Task_BeginQuestLogPlayback(taskId);
+    //     DestroyTask(taskId);
+    // }
+    // else
+    // {
+    //     SetMainCallback2(CB2_ContinueSavedGame);
+    //     DestroyTask(taskId);
+    // }
+    SetMainCallback2(CB2_ContinueSavedGame);
+    DestroyTask(taskId);
 }
 
 static void Task_BeginQuestLogPlayback(u8 taskId)
 {
-    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(ROUTE1);
-    gSaveBlock1Ptr->location.mapNum =  MAP_NUM(ROUTE1);
-    gSaveBlock1Ptr->location.warpId = WARP_ID_NONE;
-    sCurrentSceneNum = 0;
-    gDisableMapMusicChangeOnMapLoad = 1;
-    DisableWildEncounters(TRUE);
-    QLPlayback_InitOverworldState();
+    // gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(ROUTE1);
+    // gSaveBlock1Ptr->location.mapNum =  MAP_NUM(ROUTE1);
+    // gSaveBlock1Ptr->location.warpId = WARP_ID_NONE;
+    // sCurrentSceneNum = 0;
+    // gDisableMapMusicChangeOnMapLoad = 1;
+    // DisableWildEncounters(TRUE);
+    // QLPlayback_InitOverworldState();
 }
 
 void QL_InitSceneObjectsAndActions(void)

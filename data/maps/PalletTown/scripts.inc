@@ -982,3 +982,75 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	release
 # 492 "data/maps/PalletTown/scripts.pory"
 	end
+
+PalletTown_EventScript_GuardMan::
+# 495 "data/maps/PalletTown/scripts.pory"
+	lockall
+# 496 "data/maps/PalletTown/scripts.pory"
+	msgbox PalletTown_Text_GuardMan, MSGBOX_NPC
+# 497 "data/maps/PalletTown/scripts.pory"
+	releaseall
+	return
+
+
+PalletTown_EventScript_GuardTrigger::
+# 501 "data/maps/PalletTown/scripts.pory"
+	lock
+# 502 "data/maps/PalletTown/scripts.pory"
+	textcolor NPC_TEXT_COLOR_MALE
+# 503 "data/maps/PalletTown/scripts.pory"
+	playse SE_PIN
+# 504 "data/maps/PalletTown/scripts.pory"
+	applymovement 4, Common_Movement_ExclamationMark
+# 505 "data/maps/PalletTown/scripts.pory"
+	waitmovement 0
+# 506 "data/maps/PalletTown/scripts.pory"
+	delay 80
+# 507 "data/maps/PalletTown/scripts.pory"
+	applymovement 4, PalletTown_Movement_FaceUp
+# 508 "data/maps/PalletTown/scripts.pory"
+	waitmovement 0
+# 509 "data/maps/PalletTown/scripts.pory"
+	delay 80
+# 510 "data/maps/PalletTown/scripts.pory"
+	msgbox PalletTown_Text_GuardMan, MSGBOX_NPC
+# 511 "data/maps/PalletTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_Movement_GuardManPlayer
+# 512 "data/maps/PalletTown/scripts.pory"
+	waitmovement 0
+# 513 "data/maps/PalletTown/scripts.pory"
+	applymovement 4, PalletTown_Movement_FaceRight
+# 514 "data/maps/PalletTown/scripts.pory"
+	waitmovement 0
+# 515 "data/maps/PalletTown/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 516 "data/maps/PalletTown/scripts.pory"
+	release
+	return
+
+
+# 519 "data/maps/PalletTown/scripts.pory"
+PalletTown_Movement_GuardManPlayer:
+# 520 "data/maps/PalletTown/scripts.pory"
+	walk_right
+# 520 "data/maps/PalletTown/scripts.pory"
+	walk_right
+	step_end
+
+# 523 "data/maps/PalletTown/scripts.pory"
+PalletTown_Movement_FaceDown:
+# 524 "data/maps/PalletTown/scripts.pory"
+	face_down
+	step_end
+
+# 527 "data/maps/PalletTown/scripts.pory"
+PalletTown_Movement_FaceUp:
+# 528 "data/maps/PalletTown/scripts.pory"
+	face_up
+	step_end
+
+# 531 "data/maps/PalletTown/scripts.pory"
+PalletTown_Movement_FaceRight:
+# 532 "data/maps/PalletTown/scripts.pory"
+	face_right
+	step_end

@@ -65,3 +65,6 @@ PalletTown_Text_OakYouEnjoyingTraveling::
     .string "Good for you, good for you.\n"
     .string "Hohoho.$"
 
+PalletTown_Text_GuardMan::
+    .string "It's too dangerous to go out!\p"
+    .string "Wild Pokémon live in tall grass!$"

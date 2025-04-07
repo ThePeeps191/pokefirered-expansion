@@ -491,3 +491,43 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	release
 	end
 `
+script PalletTown_EventScript_GuardMan {
+    lockall
+    msgbox(PalletTown_Text_GuardMan, MSGBOX_NPC)
+    releaseall
+}
+
+script PalletTown_EventScript_GuardTrigger {
+    lock
+    textcolor(NPC_TEXT_COLOR_MALE)
+    playse(SE_PIN)
+    applymovement(4, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(80)
+    applymovement(4, PalletTown_Movement_FaceUp)
+    waitmovement(0)
+    delay(80)
+    msgbox(PalletTown_Text_GuardMan, MSGBOX_NPC)
+    applymovement(OBJ_EVENT_ID_PLAYER, PalletTown_Movement_GuardManPlayer)
+    waitmovement(0)
+    applymovement(4, PalletTown_Movement_FaceRight)
+    waitmovement(0)
+    textcolor(NPC_TEXT_COLOR_NEUTRAL)
+    release
+}
+
+movement PalletTown_Movement_GuardManPlayer {
+    walk_right * 2
+}
+
+movement PalletTown_Movement_FaceDown {
+    face_down
+}
+
+movement PalletTown_Movement_FaceUp {
+    face_up
+}
+
+movement PalletTown_Movement_FaceRight {
+    face_right
+}
