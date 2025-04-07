@@ -531,3 +531,10 @@ movement PalletTown_Movement_FaceUp {
 movement PalletTown_Movement_FaceRight {
     face_right
 }
+
+script PalletTown_EventScript_HideGuard {
+    faceplayer
+    setflag(FLAG_HIDE_SEABREEZE_GUARD_MAN)
+    setvar(VAR_MAP_SCENE_PALLET_TOWN_OAK, 1)
+    msgbox("ok")
+}

@@ -67,7 +67,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 0,
-      "y": 3,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -80,8 +80,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 9,
+      "x": 6,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -90,6 +90,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SeabreezeTown_EventScript_ItemOranBerry",
       "flag": "FLAG_HIDE_SEABREEZE_ORAN_BERRY"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
+      "x": 13,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PalletTown_EventScript_HideGuard",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -146,7 +160,7 @@
     {
       "type": "trigger",
       "x": 0,
-      "y": 2,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
@@ -180,16 +194,16 @@
     },
     {
       "type": "sign",
-      "x": 9,
-      "y": 11,
+      "x": 20,
+      "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_EventScript_TownSign"
     },
     {
       "type": "sign",
-      "x": 5,
-      "y": 14,
+      "x": 16,
+      "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_EventScript_TrainerTips"

@@ -1054,3 +1054,19 @@ PalletTown_Movement_FaceRight:
 # 532 "data/maps/PalletTown/scripts.pory"
 	face_right
 	step_end
+
+PalletTown_EventScript_HideGuard::
+# 536 "data/maps/PalletTown/scripts.pory"
+	faceplayer
+# 537 "data/maps/PalletTown/scripts.pory"
+	setflag FLAG_HIDE_SEABREEZE_GUARD_MAN
+# 538 "data/maps/PalletTown/scripts.pory"
+	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 1
+# 539 "data/maps/PalletTown/scripts.pory"
+	msgbox PalletTown_EventScript_HideGuard_Text_0
+	return
+
+
+PalletTown_EventScript_HideGuard_Text_0:
+# 539 "data/maps/PalletTown/scripts.pory"
+	.string "ok$"
