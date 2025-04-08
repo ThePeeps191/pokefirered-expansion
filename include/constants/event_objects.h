@@ -158,6 +158,7 @@
 #define OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES     154
 #define OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES      155
 #define OBJ_EVENT_GFX_OW_MON     156
+// #define OBJ_EVENT_GFX_STARLY 157
 
 #define NUM_OBJ_EVENT_GFX     157
 
@@ -268,6 +269,9 @@
 #define OBJ_EVENT_PAL_TAG_NPC_3                       0x111E // emerald
 #define OBJ_EVENT_PAL_TAG_NPC_4                       0x111F // emerald
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                     0x1120
+
+// my event objects
+#define OBJ_EVENT_PAL_TAG_STARLY 0x1124
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

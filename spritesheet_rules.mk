@@ -4577,3 +4577,7 @@ $(MISCGFXDIR)/emotes.4bpp: %.4bpp: %.png
 
 # All pokeballs are 16x32
 $(OBJEVENTGFXDIR)/misc/ball_%.4bpp: $(OBJEVENTGFXDIR)/misc/ball_%.png ; $(GFX) $< $@ -mwidth 2 -mheight 4
+
+# My object event custom graphics
+#$(OBJEVENTGFXDIR)/pokemon/starly.4bpp: %.4bpp: %.png
+#	$(GFX) $< $@ -mwidth 4 -mheight 4

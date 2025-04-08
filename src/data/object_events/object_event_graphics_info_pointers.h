@@ -1,3 +1,4 @@
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Starly;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedSurf;
